@@ -12,24 +12,6 @@
     transition: background-color .1s linear;
 }
 
-// .header.fixed {
-//     padding: 5px 0;
-
-//     background-color: #4c6c96;
-//     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-
-//     transform: translate3d(0, 0, 0);
-// }
-
-// .header.active {
-//     background-color: #4c6c96;
-// }
-
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -39,4 +21,27 @@
 .header__logo {
     width: 228px;
     height: 70px;
+}
+
+.header.fixed {
+    padding: .3rem 0;
+
+    background-color: @light_black;
+    box-shadow: 0 3px 10px fade(@light_black, 80);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translate3d(0, 0, 0);
+
+    .header__logo {
+        width: 147px;
+        height: 45px;
+    }
+}
+
+.header.active {
+    background-color: @light_black;
 }
