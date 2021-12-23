@@ -1,0 +1,38 @@
+// main: ../style.less
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+
+    cursor: pointer;
+    border-radius: 2.3rem;
+    border: none;
+
+    font-family: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    transition: background-color .2s linear, color .2s linear;
+
+    &:focus {
+        outline: none;
+    }
+
+    // Modifications
+    &--intro {
+        min-width: 350px;
+        padding: .8rem .3rem;
+        font-size: 1.6rem;
+        background-color: fade(@white, 30);
+        -webkit-backdrop-filter: blur(1rem);
+        backdrop-filter: blur(1rem);
+    }
+
+    &--partn {
+        min-width: 200px;
+        padding: 1.5rem .5rem;
+        font-size: 1rem;
+        background-color: @red;
+    }
+}
