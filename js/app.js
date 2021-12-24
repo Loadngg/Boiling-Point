@@ -38,7 +38,7 @@ function checkPos(scrollOffset) {
     }
 }
 
-// slick
+// Slick
 $(document).ready(function(){
 	$('.slider').slick({
 		arrows:true,
@@ -50,3 +50,30 @@ $(document).ready(function(){
 		autoplaySpeed:2000,
 	});
 });
+
+// News
+// let requestURL = 'news.json';
+// let request = new XMLHttpRequest();
+// request.open('GET', requestURL);
+// request.responseType = 'json';
+// request.send();
+
+// request.onload() = function() {
+//     let news = request.response;
+//     console.log(news[0]);
+// }
+
+// Show all partn
+let btn = document.getElementById('btnPartn');
+btn.onclick = function () {
+    let hidden = document.getElementById('hiddenTable');
+    var actualDisplay = getComputedStyle(hidden).display;
+    if (actualDisplay === 'none') {
+        console.log(actualDisplay);
+        hidden.style.display = 'block';
+        btn.innerHTML = 'скрыть всё';
+    } else {
+        hidden.style.display = 'none';
+        btn.innerHTML = 'показать всё';
+    }
+}
