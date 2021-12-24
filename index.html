@@ -36,10 +36,19 @@
                 Центр компетенций
             </div>
 
-            <button class="intro__btn btn btn--intro">Видео про нас</button>
+            <button class="intro__btn btn btn--intro" onclick="showOverflow('overflow')">Видео про нас</button>
         </div>
     </div>
 </section>
+
+<div class="overflow hidden transparent" id="overflow">
+    <div class="container">
+        <iframe class="overflow__frame" allowfullscreen data-src="https://www.youtube.com/embed/UOUR_uepMzw" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="overflow__close" onclick="hideOverflow()">
+            <img src="images/svg/close.svg" alt="">
+        </div>
+    </div>
+</div>
 
 <section class="about" id="about">
     <div class="container">
@@ -116,58 +125,53 @@
             <button class="btn btn--partn" id="btnPartn">Показать всё</button>
             <div class="partners__table">
                 <div class="partners__row">
-                    <img src="https://place-hold.it/200" alt="" class="partners__img">
-                    <img src="https://place-hold.it/200" alt="" class="partners__img">
-                    <img src="https://place-hold.it/200" alt="" class="partners__img">
-                    <img src="https://place-hold.it/200" alt="" class="partners__img">
-                    <img src="https://place-hold.it/200" alt="" class="partners__img">
-                    <img src="https://place-hold.it/200" alt="" class="partners__img">
+                    <img src="images/partn/россия страна возможностей.png" alt="" class="partners__img">
+                    <img src="images/partn/тгту.png" alt="" class="partners__img">
+                    <img src="images/partn/сбер.png" alt="" class="partners__img">
+                    <img src="images/partn/ростелеком.png" alt="" class="partners__img">
+                    <img src="images/partn/кванториум.png" alt="" class="partners__img">
+                    <img src="images/partn/яндекс лицей.png" alt="" class="partners__img">
                 </div>
                 <div class="partners__hidden" id="hiddenTable">
                     <div class="partners__row">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
+                        <img src="images/partn/isoroc.png" alt="" class="partners__img">
+                        <img src="images/partn/worldSkills.png" alt="" class="partners__img">
+                        <img src="images/partn/звезда.png" alt="" class="partners__img">
+                        <img src="images/partn/крата.png" alt="" class="partners__img">
+                        <img src="images/partn/сколково.png" alt="" class="partners__img">
+                        <img src="images/partn/тамак.png" alt="" class="partners__img">
                     </div>
                     <div class="partners__row">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                    </div>
-                    <div class="partners__row">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                    </div>
-                    <div class="partners__row">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                    </div>
-                    <div class="partners__row">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-                        <img src="https://place-hold.it/200" alt="" class="partners__img">
-
+                        <img src="images/partn/центр технологического образования.png" alt="" class="partners__img">
+                        <img src="images/partn/я профи.png" alt="" class="partners__img">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__col">
+                <h2 class="footer__title">Центр компетенций "ТГТУ"</h2>
+                <p class="footer__subtitle">ТАМБОВСКИЙ ГОСУДАРСТВЕННЫЙ 
+                    ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</p>
+                <a href="https://yandex.ru/maps/-/CCUyqTgoWD" class="footer__map">РОССИЯ, ТАМБОВСКАЯ ОБЛАСТЬ, 
+                    Г. ТАМБОВ, УЛ. ЛЕНИНГРАДСКАЯ, 
+                    Д. 1</a>
+            </div>
+            <div class="footer__col">
+                <h3 class="footer__director">Руководитель</h3>
+                <p class="footer__name">Эдуард Злобин</p>
+                <a href="mailto:ehduardzlobin@yandex.ru">ehduardzlobin@yandex.ru</a>
+                <h3 class="footer__specialists">Специалисты</h3>
+                <p class="footer__name">Наталия Дёмина<br>Татьяна Чупахина</p>
+            </div>
+        </div>
+    </div>
+</footer>
     
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
 <script src="js/slick.min.js"></script>

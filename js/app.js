@@ -77,3 +77,23 @@ btn.onclick = function () {
         btn.innerHTML = 'показать всё';
     }
 }
+
+// overflow
+function showOverflow(blockId) {
+    currBlockId = blockId;
+    block = document.getElementById(currBlockId);
+    iframe = block.firstElementChild.firstElementChild;
+    iframe.src = iframe.dataset.src;
+    block.classList.remove('hidden'); 
+    setTimeout(function(){
+        block.classList.remove('transparent')
+    }, 20)
+};
+
+function hideOverflow() {
+    block.classList.add('transparent'); 
+    setTimeout(function(){
+        block.classList.add('hidden')
+        iframe.src = "about:blank";
+    }, 500);
+}
