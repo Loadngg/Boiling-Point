@@ -4,15 +4,17 @@
     width: 100%;
     max-width: inherit;
 
-    // opacity: 0;
-    // transform: translateY(40%);
-    // transition: all 1s ease;
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all 1s ease;
+
+    &.show {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
-// .slider__block.show {
-//     opacity: 1;
-//     transform: translateY(0%);
-// }
+// .slider__block
 
 .slick-slider{
 	min-width: 0;

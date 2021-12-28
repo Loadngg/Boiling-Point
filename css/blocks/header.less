@@ -10,6 +10,13 @@
     right: 0;
     z-index: 1000;
     transition: background-color .1s linear;
+
+    opacity: 0;
+
+    &.show {
+        opacity: 1;
+        transition: all 1s ease .2s;
+    }
 }
 
 .header__inner {
@@ -21,6 +28,10 @@
 .header__logo {
     width: 228px;
     height: 70px;
+
+    background: url("../images/logo.png") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 .header.fixed {

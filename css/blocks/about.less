@@ -1,5 +1,16 @@
 // main: ../style.less
 
+.about {
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all 1s ease;
+
+    &.show {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 .about__inner {
     display: flex;
     flex-direction: column;
@@ -13,7 +24,9 @@
 .about__img {
     width: 100%;
     max-width: 620px;
-    height: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
 }
 
 .about__text {

@@ -1,5 +1,16 @@
 // main: ../style.less
 
+.news {
+    opacity: 0;
+    transform: translateY(10%);
+    transition: all 1s ease;
+
+    &.show {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
 .news__content {
     display: flex;
     justify-content: space-between;
