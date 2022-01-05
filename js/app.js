@@ -42,6 +42,7 @@ function checkPos(scrollOffset) {
 $(document).ready(function(){
 	$('.slider').slick({
 		arrows:true,
+        // arrows:false,
 		dots:true,
 		slidesToShow:2,
         slidesToScroll: 1,
@@ -64,15 +65,24 @@ $(document).ready(function(){
 // }
 
 // Show all partn
+let partns = document.getElementsByClassName('partners__img');
+for (let i = 0; i < 7; i++) {
+    partns[i].style.display = 'block';
+}
+
 let btn = document.getElementById('btnPartn');
 btn.onclick = function () {
-    let hidden = document.getElementById('hiddenTable');
-    var actualDisplay = getComputedStyle(hidden).display;
+    let isHidden = partns[7];
+    var actualDisplay = getComputedStyle(isHidden).display;
     if (actualDisplay === 'none') {
-        hidden.style.display = 'block';
+        for (let partn of partns) {
+            partn.style.display = 'block';
+        }
         btn.innerHTML = 'скрыть всё';
     } else {
-        hidden.style.display = 'none';
+        for (let i = 7; i < partns.length; i++) {
+            partns[i].style.display = 'none';
+        }
         btn.innerHTML = 'показать всё';
     }
 }
