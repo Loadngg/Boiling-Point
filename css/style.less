@@ -14,6 +14,21 @@ body {
     color: @black;
     background-color: @light_blue;
     overflow-x: hidden;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 1350px;
+        height: 100%;
+        background-color: @white;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
 }
 
 h1, h2, h3, h4, h5, h6, p {
