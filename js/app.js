@@ -42,7 +42,6 @@ function checkPos(scrollOffset) {
 $(document).ready(function(){
 	$('.slider').slick({
 		arrows:true,
-        // arrows:false,
 		dots:true,
 		slidesToShow:2,
         slidesToScroll: 1,
@@ -145,4 +144,19 @@ if (animItems.length > 0) {
     setTimeout(() => {
         animOnScroll();
     }, 300) 
+}
+
+// Nav
+let navBtn = document.getElementById('nav_toggle');
+let nav = document.getElementById('nav');
+navBtn.onclick = function () {
+    if (nav.classList.contains('active')) {
+        nav.classList.remove('active');
+        navBtn.classList.remove('active');
+        header.classList.remove('active');
+    } else {
+        nav.classList.add('active');
+        navBtn.classList.add('active');
+        header.classList.add('active');
+    }
 }

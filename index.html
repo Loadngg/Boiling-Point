@@ -28,21 +28,25 @@
         <div class="header__inner">
             <a href="" class="header__logo"></a>
 
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <a href="#about" class="nav__link">О центре</a>
                 <a href="#slider" class="nav__link">Мы предоставляем</a>
                 <a href="#news" class="nav__link">Мероприятия</a>
                 <a href="#partners" class="nav__link">Партнёры</a>
             </nav>
+
+            <button class="nav-toggle" id="nav_toggle" type="button">
+                <span class="nav-toggle__item">Menu</span>
+            </button>
         </div>
     </div>
 </header>
 
 <section class="intro" id="intro">
-    <div class="container">
+    <div class="container container--intro">
         <div class="intro__inner anim-items">
             <div class="intro__text">
-                Центр компетенций
+                Центр<br>компетенций
             </div>
 
             <button class="intro__btn btn btn--intro" onclick="showOverflow('overflow')">Видео про нас</button>
