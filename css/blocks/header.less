@@ -3,7 +3,7 @@
 .header {
     position: absolute;
     width: 100%;
-    padding-top: 1.1rem;
+    padding: .8rem 0;
 
     top: 0;
     left: 0;
@@ -55,4 +55,11 @@
     background: url("../images/logo.png") center no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
+}
+
+@media @tablet {
+    .header__logo {
+        width: 200px;
+        height: 62px;
+    }
 }

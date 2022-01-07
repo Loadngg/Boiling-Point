@@ -125,8 +125,6 @@ if (animItems.length > 0) {
 
             if ((scrollY > animItemOffset - animItemPoint) && scrollY < (animItemOffset + animItemH)) {
                 animItem.classList.add('show');
-            } else {
-                // animItem.classList.remove('show');
             }
         }
     }
@@ -149,14 +147,35 @@ if (animItems.length > 0) {
 // Nav
 let navBtn = document.getElementById('nav_toggle');
 let nav = document.getElementById('nav');
-navBtn.onclick = function () {
+let navLinks = document.getElementsByClassName('nav__link');
+
+navBtn.onclick = function (event) {
+    event.preventDefault();
+
     if (nav.classList.contains('active')) {
-        nav.classList.remove('active');
+        nav.classList.remove('transformed');
+        setTimeout(function(){
+            nav.classList.remove('active');
+        }, 30);
         navBtn.classList.remove('active');
         header.classList.remove('active');
     } else {
         nav.classList.add('active');
+        setTimeout(function(){
+            nav.classList.add('transformed');
+        }, 30);
         navBtn.classList.add('active');
         header.classList.add('active');
     }
+}
+
+for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener('click', function() {
+        navBtn.classList.remove('active');
+        nav.classList.remove('transformed');
+        setTimeout(function(){
+            nav.classList.remove('active');
+        }, 30);
+        header.classList.remove('active');
+    })
 }
