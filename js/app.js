@@ -1,7 +1,7 @@
 // Scroll Top on reload
-// $(window).on('beforeunload', function(){
-//     $(window).scrollTop(0);
-// });
+$(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
+});
 
 // Smooth scroll
 const smoothLinks = document.querySelectorAll('a[href^="#"]'); 
@@ -60,16 +60,30 @@ $(document).ready(function(){
 });
 
 // News
-// let requestURL = 'news.json';
-// let request = new XMLHttpRequest();
-// request.open('GET', requestURL);
-// request.responseType = 'json';
-// request.send();
+let content = document.getElementById('news__content');
 
-// request.onload() = function() {
-//     let news = request.response;
-//     console.log(news[0]);
-// }
+let requestURL = 'news.json';
+let request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+
+request.onload = function() {
+    let news = request.response;
+    for (let i = news.length - 3; i < news.length; i++) {
+        let photo = news[i]['photo'];
+        let title = news[i]['title'];
+        let text = news[i]['text'];
+        let date = news[i]['date'];
+        
+        content.innerHTML += `<div class="news__item">
+        <img src="images/news/${photo}" alt="" class="news__photo">
+        <h5 class="news__subtitle">${title}</h5>
+        <p class="news__text">${text}</p>
+        <time class="news__data">${date}</time>
+        </div>`
+    }
+}
 
 // Show all partn
 let partns = document.getElementsByClassName('partners__img');
