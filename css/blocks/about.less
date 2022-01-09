@@ -82,11 +82,17 @@
 }
 
 @media @tablet-s {
-    .about__text {
-        font-size: .9rem;
+    .about__row {
+        flex-direction: column;
+
+        &:last-child {
+            flex-direction: column-reverse;
+        }
     }
 
-    .about__content {
-        font-size: 1rem;
+    .about__text {
+        padding: 0;
+        margin: 1rem 0 2rem;
+        font-size: 1.6rem;
     }
 }

@@ -1,4 +1,23 @@
 // main: ../style.less
+
+@keyframes fade-in {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-out {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
 .nav {
     display: flex;
     align-items: center;
@@ -110,7 +129,7 @@
 
 @media @tablet {
     .nav {
-        display: none;
+        display: block;
         height: 100vh;
         text-align: right;
 
@@ -118,30 +137,25 @@
         top: 100%;
         right: 0;
 
-        transform: translateX(100%);
-
         background-color: @light_black;
 
         &.active {
-            display: block;
-            padding-right: 2rem;
-            box-shadow: -3px 0px 10px fade(@light_black, 80);   
-            
-            .nav__link {
-                padding: 1.5rem 0 1.5rem 2rem;
-            }
+            animation: fade-in .3s;
+            transform: translateX(0);
+            padding: 0 2rem 0 1rem;
+            box-shadow: 0 0 0 1000px fade(@light_black, 50);  
         }
 
-        &.transformed {
-            transform: translateX(0);
-            transition: transform .3s ease;
+        &.hide {
+            animation: fade-out .3s;
+            transform: translateX(100%);
         }
     }
 
     .nav__link {
         display: block;
+        padding: 1.5rem 0;
         margin: 0;
-        padding: 8px 20px;
         font-size: 1.2rem;
     }
 
