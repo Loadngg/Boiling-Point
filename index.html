@@ -13,9 +13,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
     <link rel="manifest" href="favicons/site.webmanifest">
-    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#413b7e">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#707070">
     <meta name="msapplication-TileColor" content="#2b5797">
-    <meta name="theme-color" content="#413b7e">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -26,7 +26,10 @@
 <header class="header anim-items" id="header">
     <div class="container">
         <div class="header__inner">
-            <a href="" class="header__logo"></a>
+            <div class="header__logos">
+                <a href="" class="header__logo"></a>
+                <a href="https://tstu.ru" class="header__logo header__logo--tstu"></a>
+            </div>
 
             <nav class="nav hide" id="nav">
                 <a href="#about" class="nav__link">О центре</a>
@@ -46,7 +49,10 @@
     <div class="container container--intro">
         <div class="intro__inner anim-items">
             <div class="intro__text">
-                Центр<br>компетенций
+                <h1 class="intro__title">
+                    Центр<br>компетенций
+                </h1>
+                <h3 class="intro__subtitle">Тамбовский Государственный технический университет</h3>
             </div>
 
             <button class="intro__btn btn btn--intro" onclick="showOverflow('overflow')">Видео про нас</button>
@@ -55,12 +61,10 @@
 </section>
 
 <div class="overflow hidden transparent" id="overflow">
-    <!-- <div class="container"> -->
-        <iframe class="overflow__frame" allowfullscreen data-src="https://www.youtube.com/embed/UOUR_uepMzw" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="overflow__close" onclick="hideOverflow()">
-            <img src="images/svg/close.svg" alt="">
-        </div>
-    <!-- </div> -->
+    <iframe class="overflow__frame" allowfullscreen data-src="https://www.youtube.com/embed/UOUR_uepMzw" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="overflow__close" onclick="hideOverflow()">
+        <img src="images/svg/close.svg" alt="">
+    </div>
 </div>
 
 <section class="about anim-items" id="about">

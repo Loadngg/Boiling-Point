@@ -164,9 +164,9 @@ navBtn.onclick = function (event) {
         nav.classList.add('hide');
         setTimeout(function(){
             nav.classList.remove('active');
+            header.classList.remove('active');
         }, 300);
         navBtn.classList.remove('active');
-        header.classList.remove('active');
     } else {
         nav.classList.add('active');
         nav.classList.remove('hide');
@@ -180,8 +180,8 @@ for (let i = 0; i < navLinks.length; i++) {
         nav.classList.add('hide');
         setTimeout(function(){
             nav.classList.remove('active');
+            header.classList.remove('active');
         }, 300);
-        navBtn.classList.remove('active');
-        header.classList.remove('active');
+        navBtn.classList.remove('active');  
     });
 }

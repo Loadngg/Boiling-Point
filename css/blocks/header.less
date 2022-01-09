@@ -32,7 +32,7 @@
         transform: translate3d(0, 0, 0);
 
         .header__logo {
-            width: 147px;
+            width: 45px;
             height: 45px;
         }
     }
@@ -48,25 +48,41 @@
     align-items: center;
 }
 
+.header__logos {
+    display: flex;
+} 
+
 .header__logo {
-    width: 228px;
+    width: 70px;
     height: 70px;
 
-    background: url("../images/logo.png") center no-repeat;
+    background: url("../logo.png") center no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
+
+    &--tstu {
+        background: url("../tstu.png") center no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        width: 100px !important;
+        margin-left: 2rem;
+    }
 }
 
 @media @tablet {
     .header__logo {
-        width: 200px;
+        width: 62px;
         height: 62px;
     }
 }
 
 @media @tablet-s {
     .header__logo {
-        width: 120px;
-        height: 68px;
+        width: 45px;
+        height: 45px;
+
+        &--tstu {
+            margin-left: 0rem;
+        }
     }
 }
