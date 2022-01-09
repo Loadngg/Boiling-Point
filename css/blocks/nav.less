@@ -129,7 +129,7 @@
 
 @media @tablet {
     .nav {
-        display: block;
+        display: none;
         height: 100vh;
         text-align: right;
 
@@ -140,6 +140,7 @@
         background-color: @light_black;
 
         &.active {
+            display: block;
             animation: fade-in .3s;
             transform: translateX(0);
             padding: 0 2rem 0 1rem;

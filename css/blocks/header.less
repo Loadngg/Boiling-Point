@@ -53,13 +53,20 @@
     height: 70px;
 
     background: url("../images/logo.png") center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: contain;
+    background-size: contain;
 }
 
 @media @tablet {
     .header__logo {
         width: 200px;
         height: 62px;
+    }
+}
+
+@media @tablet-s {
+    .header__logo {
+        width: 120px;
+        height: 68px;
     }
 }

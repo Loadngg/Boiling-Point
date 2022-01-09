@@ -98,7 +98,7 @@ btn.onclick = function () {
 function showOverflow(blockId) {
     currBlockId = blockId;
     block = document.getElementById(currBlockId);
-    iframe = block.firstElementChild.firstElementChild;
+    iframe = block.firstElementChild;
     iframe.src = iframe.dataset.src;
     block.classList.remove('hidden'); 
     setTimeout(function(){
@@ -164,7 +164,7 @@ navBtn.onclick = function (event) {
         nav.classList.add('hide');
         setTimeout(function(){
             nav.classList.remove('active');
-        }, 30);
+        }, 300);
         navBtn.classList.remove('active');
         header.classList.remove('active');
     } else {
@@ -180,7 +180,7 @@ for (let i = 0; i < navLinks.length; i++) {
         nav.classList.add('hide');
         setTimeout(function(){
             nav.classList.remove('active');
-        }, 30);
+        }, 300);
         navBtn.classList.remove('active');
         header.classList.remove('active');
     });

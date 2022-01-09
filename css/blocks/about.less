@@ -59,7 +59,7 @@
 .about__img {
     width: 100%;
     height: 100%;
-    z-index: 1;
+    // z-index: 1;
 }
 
 .about__text {
@@ -93,6 +93,16 @@
     .about__text {
         padding: 0;
         margin: 1rem 0 2rem;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
+
+        &:first-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media @mobile {
+    .about__content {
+        font-size: .9rem;
     }
 }
