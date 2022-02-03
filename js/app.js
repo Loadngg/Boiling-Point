@@ -1,7 +1,7 @@
 // Scroll Top on reload
-// $(window).on('beforeunload', function(){
-//     $(window).scrollTop(0);
-// });
+$(window).on('beforeunload', function(){
+    $(window).scrollTop(0);
+});
 
 // Smooth scroll
 const smoothLinks = document.querySelectorAll('a[href^="#"]'); 
