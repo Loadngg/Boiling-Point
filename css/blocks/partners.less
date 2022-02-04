@@ -23,32 +23,44 @@
     justify-content: center;
 }
 
-.partners__img {
+.partners__link {
     display: none;
+
     width: 100%;
     height: auto;
-    object-fit: contain;
     max-width: 12.5%;
-    min-height: 200px;
 
     margin-right: 1.1rem;
     margin-bottom: 0.6rem;
 }
 
+.partners__link#technosphere {
+    pointer-events: none;
+    cursor: default;
+}
+
+.partners__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    
+    min-height: 200px;
+}
+
 @media @tablet-l {
-    .partners__img {
+    .partners__link {
         max-width: 20%;
     }
 }
 
 @media @tablet-s {
-    .partners__img {
+    .partners__link {
         max-width: 25%;
     }
 }
 
 @media @mobile {
-    .partners__img {
+    .partners__link {
         min-width: 50%;
     }
 }

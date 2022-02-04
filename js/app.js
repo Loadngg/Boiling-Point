@@ -86,7 +86,7 @@ request.onload = function() {
 }
 
 // Show all partn
-let partns = document.getElementsByClassName('partners__img');
+let partns = document.getElementsByClassName('partners__link');
 for (let i = 0; i < 7; i++) {
     partns[i].style.display = 'block';
 }
