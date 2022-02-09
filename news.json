@@ -1,26 +1,20 @@
 [
     {
-        "photo": "студвесна.png",
+        "photo": "вдохновители.jpg",
+        "title": "Вдохновители",
+        "text": "22 января состоялась презентация Проекта «Вдохновители». Проект - мотивационные встречи для студентов, которые проводят выдающиеся специалисты, добившиеся успеха в IT, цифровых коммуникациях, машиностроении, медицине, науке, творчестве. Цель проекта - показать молодому поколению конкурентоспособность России на конкретных примерах и делах людей, реализовавших передовые достижения мирового уровня.",
+        "date": "22 января 2022"
+    },
+    {
+        "photo": "форум.jpg",
         "title": "Студенческая весна",
         "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "date": "11 декабря 2021"
+        "date": "26 января 2022"
     },
     {
-        "photo": "управляй.png",
-        "title": "Управляй",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "date": "12 декабря 2021"
-    },
-    {
-        "photo": "casein.png",
-        "title": "Case-IN",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "date": "13 декабря 2021"
-    },
-    {
-        "photo": "студвесна.png",
-        "title": "Студенческая весна",
-        "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-        "date": "9 января 2022"
+        "photo": "золотая стажировка.jpg",
+        "title": "Золотая стажировка",
+        "text": "21 февраля 2022 года начинается прием заявок на III сезон конкурса «Золотая стажировка», который проходит в рамках Всероссийской акции «Время карьеры». Конкурс дает возможность попасть в команду одной из крупнейших компаний страны из числа партнеров конкурса, среди которых ГК Росатом, SAP, Северсталь, СКБ-банк, Трубная металлургическая компания, Газпромбанк, Ernst&Young, Мегафон, PwC, Магнит и др.Подать заявку на участие в конкурсе можно до 24 апреля 2022 года. Не упускайте возможность попасть в компанию мечты! Подробности и регистрация: времякарьеры.рф/золотая-стажировка/",
+        "date": "21 февраля 2022"
     }
 ]
