@@ -2,6 +2,8 @@ User-agent: *
 Allow: /images/
 Disallow: /js/
 Disallow: /css/
+Sitemap: ck-tstu.ru/sitemap.xml
+Host: ck-tstu.ru
 
 User-agent: Googlebot
 Allow: /
@@ -10,4 +12,3 @@ User-agent: Yandex
 Allow: /images/
 Disallow: /js/
 Disallow: /css/
-Host: site.ru
