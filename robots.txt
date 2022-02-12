@@ -2,7 +2,7 @@ User-agent: *
 Allow: /images/
 Disallow: /js/
 Disallow: /css/
-Sitemap: ck-tstu.ru/sitemap.xml
+Sitemap: https://ck-tstu.ru/sitemap.xml
 Host: ck-tstu.ru
 
 User-agent: Googlebot
